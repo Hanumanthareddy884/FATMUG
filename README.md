@@ -6,9 +6,9 @@ python -m venv env
 Clone the repository:
 git clone https://github.com/Hanumanthareddy884/FATMUG.git
 
-setup the folder cd vendor
+setup the folder: cd vendor
 
-Activate env
+Activate env:
 .\env\scripts\activate
 
 Install dependencies:
