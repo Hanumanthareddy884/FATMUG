@@ -5,14 +5,13 @@ from .models import *
 class VendorSeriliazer(serializers.ModelSerializer):
     class Meta:
         model = Vendor
-        fields = ['name', 'contact_details', 'address', 'vendor_code']
+        fields = '__all__'
 
 
 class PurchaseOrderSeriliazer(serializers.ModelSerializer):
     class Meta:
         model = PurchaseOrder
-        fields = ['po_number', 'vendor', 'order_date',
-                  'delivery_date', 'items', 'quantity', 'status', 'quality_rating', 'issue_date', 'acknowledgment_date']
+        fields = '__all__'
 
 
 class AcknowledgeSerializer(serializers.ModelSerializer):

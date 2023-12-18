@@ -3,4 +3,4 @@ djangorestframework
 pyyaml
 requests
 django-cors-headers
-
+psycopg2
