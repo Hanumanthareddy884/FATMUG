@@ -75,4 +75,4 @@ Retrieve Vendor Performance:
 URL: /vendors/<int:pk>/performance/
 Method: GET performance based on vendor
 
-If anything fell free to contact me: reddyreddy884@gmail.com
+If anything feel free to contact me: reddyreddy884@gmail.com
