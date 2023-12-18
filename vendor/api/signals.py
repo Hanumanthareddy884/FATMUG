@@ -3,7 +3,7 @@ from django.dispatch import receiver
 from django.db.models import Avg, F, ExpressionWrapper, fields
 from django.db import transaction
 
-from api.models import HistoricalPerformance, PurchaseOrder
+from api.models import HistoricalPerformance, PurchaseOrder,Vendor
 from django.utils import timezone
 
 """
@@ -15,7 +15,7 @@ whenever changes made in Purchase order model.
 @receiver(post_save, sender=PurchaseOrder)
 def performace_update(sender, instance, **kwargs):
     vendor = instance.vendor
-
+    
     completed_pos = PurchaseOrder.objects.filter(
         vendor=vendor, status='Completed')
     total_completed_pos = completed_pos.count()
